@@ -1,0 +1,209 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>KRIWIL FC</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script>
+    <!-- light-box -->
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+   <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+		});
+	</script>
+	<link rel="shortcut icon" href="images/icon.png">
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href="index.html"><img src="images/logo.png" alt=""/></a>
+					 </div>
+					 <div class="menu">
+						  <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+						    <ul class="nav" id="nav">
+						    	<li><a href="team.html">TENTANG TIM</a></li>
+						    	<li><a href="galeri.html">GALERI</a></li>
+						    	<li><a href="fans.html">FANS</a></li>
+																
+								<div class="clear"></div>
+							</ul>
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>							
+	    		    <div class="clear"></div>
+	    	    </div>
+	            
+		        <div class="clear"></div>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	  </div>
+     <div class="main">
+      <div class="shop_top">
+		<div class="container">
+			<div class="row ex_box">
+				<h3 class="m_2">KRIWIL FC ON ACTION</h3>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/galeri1.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/galeri1.jpg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						DEK EGA NGAJAK TOS BOLA
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/galeri2.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/galeri2.jpg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						BANG SANCHEZ SEDANG GARUK KETEK
+					</div>
+				</a></div>
+				</div>
+				<div class="col-md-4 team1">
+				<div class="img_section magnifier2">
+				  <a class="fancybox" href="images/galeri3.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/galeri3.jpg" class="img-responsive" alt=""><span> </span>
+					<div class="img_section_txt">
+						MEREKA SEDANG ANTRI TOILET
+					</div>
+				</a></div>
+				</div>
+
+				<li class="widget"> 
+					<h3 class="m_2">KRIWIL HOLIC BERSUARA</h3>
+					<audio id="audio" src="galeri/berisik.mp3" controls></audio> 
+				</li> 
+
+		    </div>
+			    <div id="content"><div id="single"> 
+				<div id="content"> 
+				<div id="single" style="width:700px;"> 
+				<h3 class="m_2">KRIWIL FC</h3> 
+				<video width="700" controls="controls"> 
+				<source src="galeri/video.mp4" 
+				type="video/mp4" style="width:580px" /> 
+				Your browser does not support the video tag. 
+				</video> 
+				</div> 
+			</div>
+		  
+				</a></div>
+			   </div>
+		    </div>
+		 </div>
+	   </div>
+	  </div>
+	  <div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>KRIWIL FC</h4>
+							<li><a href="team.html">TENTANG TIM</a></li>
+						    <li><a href="galeri.html">GALERI</a></li>
+						    <li><a href="fans.html">FANS</a></li>
+								
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>SPONSOR</h4>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor1.png" width="100px"></li></ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor2.png" width="100px"></li></ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor3.png" width="100px"></li></ul>
+							</div> <br>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor4.png" width="100px"></li></ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor5.png" width="100px"></li></ul>
+							</div>
+							<div class="col-md-6">
+								<ul class="footer_box">
+								<li><img src="images/sponsor6.png" width="100px"></li></ul>
+							</div>
+							
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<ul class="footer_box">
+							
+							<ul class="social">	
+							  <li class="facebook"><a href="www.facebook.com"><span> </span></a></li>
+							  <li class="twitter"><a href="https://twitter.com/adhikayog"><span> </span></a></li>
+							  <li class="instagram"><a href="www.instagram.com/adhikayoga"><span> </span></a></li>	
+							  <li class="youtube"><a href="https://www.youtube.com/channel/UC6yW44UGJJBvYTlfC7CRg2Q"><span> </span></a></li>										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    
+					  
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
